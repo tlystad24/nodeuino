@@ -1,0 +1,15 @@
+{
+  "name": "nodeuino",
+  "version": "1.0.0",
+  "description": "Controlling arduino from node using johny-five",
+  "main": "arduino.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tobias Lystad",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "johnny-five": "^0.11.6"
+  }
+}
