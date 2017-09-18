@@ -1,6 +1,15 @@
 # Arduino + NodeJS
+
+## Requirements
+- Arduino
+- LED `(pin 13)``
+- NODE.JS
+    + Express
+    + Johnny-Five
+
 ## Deployment
 How to run the program
+
 ### Arduino
 The arduino is using the firmata protocol to recieve instructions from the NodeJS app.
 1. Upload `StandardFirmata` to Arduino
