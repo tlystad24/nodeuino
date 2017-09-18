@@ -2,7 +2,7 @@
 
 ## Requirements
 - Arduino
-- LED `(pin 13)``
+- LED `(pin 13)`
 - NODE.JS
     + Express
     + Johnny-Five
