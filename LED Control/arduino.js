@@ -6,8 +6,6 @@ var board = new five.Board;
 var express = require('express');
 var app = express();
 
-
-
 // Run codeblock when board is ready
 board.on('ready', function() {
 	console.log('Ready');
@@ -17,7 +15,7 @@ board.on('ready', function() {
 
 	app.get('/', function(req, res) {
 		res.send('<a href="/toggle">Toggle LED</a><br><p>The led is currently ' + state);
-	})
+	});
 
 	app.get('/toggle', function(req, res) {
 		res.redirect('/');
@@ -29,7 +27,6 @@ board.on('ready', function() {
 			state = 'off';
 		}
 	});
-
 
 	app.listen('1337', () => { console.log('Listening!')});
 });
