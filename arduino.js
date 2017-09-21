@@ -1,6 +1,11 @@
-// Import libraries
+// Import Johnny Five library
 var five = require('johnny-five');
 var board = new five.Board;
+
+// Import express
+var express = require('express');
+var app = express();
+
 
 
 // Run codeblock when board is ready
@@ -8,10 +13,6 @@ board.on('ready', function() {
 	console.log('Ready');
 
 	var led = new five.Led(13);
-
-	var express = require('express');
-	var app = express();
-
 	var state = 'off';
 
 	app.get('/', function(req, res) {
