@@ -1,6 +1,9 @@
+// Import libraries
 var five = require('johnny-five');
 var board = new five.Board;
 
+
+// Run codeblock when board is ready
 board.on('ready', function() {
 	console.log('Ready');
 
